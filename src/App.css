@@ -1,38 +1,161 @@
-.App {
+:root {
+  --dorianGrey: #2F3C42;
+  --dusk: #114B5F;
+  --outerspace: #44565F;
+  --payneGrey: #586F7C;
+  --aqua: aqua;
+  --mint: #A0C0C2;
+  --offWhite: #E5EEF1;
+  --offMint: #B8DBD9;
+  --palePink: #e9cdcd;
+  --timberwolf: #E5DAD9;
+
+}
+
+.h1 {
+  font-size: 60px;
+  position: relative;
   text-align: center;
+  color: var(--aqua);
+  margin-top: 10px;
+  margin-bottom: 1px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.h2 {
+  font-size: 40px;
+  position: relative;
+  text-align: center;
+  color: var(--aqua);
+  margin-top: 1px;
+  margin-top: 20px;
+
+  font-family: 'Alegreya Sans SC', sans-serif;
+
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar {
+  background-color: var(--timberwolf);
+  position: relative;
+  width: 70%;
+  height: 30%;
+  margin: 15%;
+  text-align: center;
+  color: var(--outerspace);
+  border-radius: .5rem;
+  clear: both;
+  /* Add this property to clear the float */
+  /* border: 3px solid var(--offMint); */
+  border-radius: 30px;
+  /* Add border property */
+  font-size: 25px;
+  inset: 0;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-family: 'Alegreya Sans SC', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
+
+
+
+body {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: grid;
+  place-content: center;
+  background: var(--dusk);
+
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+
+  background-color: var(--payneGrey);
+  position: relative;
+  width: 70%;
+  height: 35%;
+  margin: 15%;
+  text-align: center;
+  color: var(--palePink);
+  border-radius: .5rem;
+  clear: both;
+  /* Add this property to clear the float */
+  border: 3px solid var(--offMint);
+  border-radius: 30px;
+  /* Add border property */
+  font-size: 25px;
+  inset: 0;
+
+  animation: glowing 5s infinite;
+
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: 'Alegreya Sans SC', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.button {
+  background-color: var(--payneGrey);
+  position: relative;
+  width: 60%;
+  height: 45%;
+  margin: 10%;
+  text-align: center;
+  color: var(--palePink);
+
+
+  border: 5px solid var(--offMint);
+  border-radius: 30px;
+  /* Add border property */
+  font-size: 25px;
+  inset: 0;
+  transition: background-color 0.3s ease;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  
+}
+
+.button:hover {
+  background-color: #999;
+  color: #000;
+}
+
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px aqua;
   }
-  to {
-    transform: rotate(360deg);
+
+  50% {
+    box-shadow: 0 0 20px aqua, 0 0 40px #fff, 0 0 60px #fff;
   }
+
+  100% {
+    box-shadow: 0 0 5px #fff;
+  }
+}
+
+.bttn {
+  background-color: #8dcbe8;
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.footer {
+  background-color: var(--payneGrey);
+  position: relative;
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+  text-align: center;
+  color: var(--palePink);
+  border-radius: .5rem;
+  clear: both;
+  /* Add this property to clear the float */
+  border: 3px solid var(--offMint);
+  border-radius: 30px;
+  /* Add border property */
+  font-size: 25px;
+  inset: 0;
+  margin-top: 10px;
+  margin-top: 10px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+
 }
