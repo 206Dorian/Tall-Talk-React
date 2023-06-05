@@ -1,9 +1,9 @@
-import express from 'express';
-import { graphqlHTTP } from 'express-graphql';
-import path from 'path';
-import { makeExecutableSchema } from 'graphql-tools';
-import { typeDefs, resolvers } from './schemas'; // Import your GraphQL schema
-import mongoose from 'mongoose'; // Import mongoose
+const express = require ('express');
+const { graphqlHTTP } = require ('express-graphql');
+const path = require ('path');
+const { makeExecutableSchema } = require ('graphql-tools');
+const { typeDefs, resolvers } = require ('./schemas'); // Update the const path for typeDefs
+const mongoose = require ('mongoose'); // Import mongoose
 
 const app = express();
 const port = process.env.PORT || 3000;

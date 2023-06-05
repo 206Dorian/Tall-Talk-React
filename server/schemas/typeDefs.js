@@ -1,11 +1,9 @@
-// typedefs.js
+const { gql } = require('apollo-server-express');
 
-import { gql } from 'apollo-server-express';
-
-export const typeDefs = gql`
+const typeDefs = gql`
   type Question {
     id: ID!
-    question: String!
+    text: String!
   }
 
   type Query {
@@ -14,8 +12,9 @@ export const typeDefs = gql`
   }
 
   type Mutation {
-    createQuestion(question: String!): Question
-    updateQuestion(id: ID!, question: String!): Question
+    createQuestion(text: String!): Question
+    updateQuestion(id: ID!, text: String!): Question
     deleteQuestion(id: ID!): ID
   }
 `;
+module.exports = typeDefs;

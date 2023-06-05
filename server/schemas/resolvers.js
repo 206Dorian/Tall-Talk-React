@@ -1,12 +1,15 @@
+const{Questions} = require ('../models')
+
+
 // resolvers.js
 
 const questions = [
-    { id: '1', question: 'What is your favorite animal?' },
-    { id: '2', question: 'Where would you like to travel?' },
+    { id: '1', text: 'What is your favorite animal?' },
+    { id: '2', text: 'Where would you like to travel?' },
     // Add more questions here
   ];
   
-  export const resolvers = {
+  const resolvers = {
     Query: {
       question: (parent, { id }) => {
         return questions.find((question) => question.id === id);
@@ -16,15 +19,15 @@ const questions = [
       },
     },
     Mutation: {
-      createQuestion: (parent, { question }) => {
-        const newQuestion = { id: Date.now().toString(), question };
+      createQuestion: (parent, { text }) => {
+        const newQuestion = { id: Date.now().toString(), text };
         questions.push(newQuestion);
         return newQuestion;
       },
-      updateQuestion: (parent, { id, question }) => {
+      updateQuestion: (parent, { id, text }) => {
         const question = questions.find((question) => question.id === id);
         if (question) {
-          question.question = question;
+          question.text = text;
           return question;
         }
         return null;
@@ -41,3 +44,4 @@ const questions = [
     },
   };
   
+  module.exports = resolvers;
