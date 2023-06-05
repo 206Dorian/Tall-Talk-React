@@ -1,19 +1,17 @@
-import Home from "./pages/Home";
-
-
-const App = () => {
-  return (
-    <div>App</div>
-  )
-}
-
-export default App
+// import Home from "./pages/Home";
+import Header from './components/Header';
+import Footer from './components/Footer';
+import QuestionsPage from "./pages/QuestionsPage";
 
 function App() {
 
   return (
 <div className="App">
-<Home />
+
+<Header />
+
+<QuestionsPage/>
+<Footer />
 
 </div>
 

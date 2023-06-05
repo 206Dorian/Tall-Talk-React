@@ -1,14 +1,13 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+
 import Questions from '../components/Questions';
 
 const QuestionsPage = () => {
   return (
     <div>
-      <Header />
+     <p>This is the ?? page</p>
       <Questions />
-      <Footer />
+      
     </div>
   );
 }
