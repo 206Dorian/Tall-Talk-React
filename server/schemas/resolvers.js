@@ -1,8 +1,8 @@
 // resolvers.js
 
 const questions = [
-    { id: '1', text: 'What is your favorite animal?' },
-    { id: '2', text: 'Where would you like to travel?' },
+    { id: '1', question: 'What is your favorite animal?' },
+    { id: '2', question: 'Where would you like to travel?' },
     // Add more questions here
   ];
   
@@ -16,15 +16,15 @@ const questions = [
       },
     },
     Mutation: {
-      createQuestion: (parent, { text }) => {
-        const newQuestion = { id: Date.now().toString(), text };
+      createQuestion: (parent, { question }) => {
+        const newQuestion = { id: Date.now().toString(), question };
         questions.push(newQuestion);
         return newQuestion;
       },
-      updateQuestion: (parent, { id, text }) => {
+      updateQuestion: (parent, { id, question }) => {
         const question = questions.find((question) => question.id === id);
         if (question) {
-          question.text = text;
+          question.question = question;
           return question;
         }
         return null;

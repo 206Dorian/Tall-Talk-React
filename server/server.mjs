@@ -1,15 +1,16 @@
 import express from 'express';
-import mongoose from 'mongoose';
 import { graphqlHTTP } from 'express-graphql';
 import path from 'path';
-import {typeDefs, resolvers} from './schemas'; // Import your GraphQL schema
+import { makeExecutableSchema } from 'graphql-tools';
+import { typeDefs, resolvers } from './schemas'; // Import your GraphQL schema
+import mongoose from 'mongoose'; // Import mongoose
 
 const app = express();
 const port = process.env.PORT || 3000;
 
 // Connect to MongoDB
 mongoose
-  .connect('mongodb://localhost:27017/your-database-name', {
+  .connect('mongodb://localhost:27017/tall-talk-react', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
@@ -23,12 +24,18 @@ mongoose
 // Serve static files from the client folder
 app.use(express.static(path.join(__dirname, '../client')));
 
+// Create a GraphQL schema
+const schema = makeExecutableSchema({
+  typeDefs,
+  resolvers,
+});
+
 // GraphQL endpoint
 app.use(
   '/graphql',
   graphqlHTTP({
-    schema, // Use your GraphQL schema
-    graphiql: true, // Enable the GraphiQL interface for testing
+    schema,
+    graphiql: true,
   })
 );
 
