@@ -1,50 +1,54 @@
-const express = require ('express');
-const { graphqlHTTP } = require ('express-graphql');
-const path = require ('path');
-const { makeExecutableSchema } = require ('graphql-tools');
-const { typeDefs, resolvers } = require ('./schemas'); // Update the const path for typeDefs
-const mongoose = require ('mongoose'); // Import mongoose
+const express = require('express');
+const { ApolloServer } = require('apollo-server-express');
+const path = require('path');
+const { authMiddleware } = require('./utils/auth');
+const { typeDefs, resolvers } = require('./schemas');
+const mongoose = require('mongoose');
 
+
+
+const PORT = process.env.PORT || 4000;
 const app = express();
-const port = process.env.PORT || 3000;
-
-// Connect to MongoDB
-mongoose
-  .connect('mongodb://localhost:27017/tall-talk-react', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => {
-    console.log('Connected to MongoDB');
-  })
-  .catch((error) => {
-    console.error('Error connecting to MongoDB:', error);
-  });
-
-// Serve static files from the client folder
-app.use(express.static(path.join(__dirname, '../client')));
-
-// Create a GraphQL schema
-const schema = makeExecutableSchema({
+const server = new ApolloServer({
   typeDefs,
   resolvers,
+  context: authMiddleware,
 });
 
-// GraphQL endpoint
-app.use(
-  '/graphql',
-  graphqlHTTP({
-    schema,
-    graphiql: true,
-  })
-);
+const connectToMongoDB = async () => {
+  try {
+    const uri = process.env.YOUR_CONNECTION_STRING;
+    await mongoose.connect(uri, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+    console.log('Connected to MongoDB Atlas');
+  } catch (error) {
+    console.error('Error connecting to MongoDB Atlas:', error);
+  }
+};
 
-// Handle requests and serve the index.html file for all routes
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client', 'index.html'));
-});
 
-// Start the server
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
+const startApolloServer = async () => {
+  await server.start();
+  server.applyMiddleware({ app });
+
+  connectToMongoDB();
+
+  if (process.env.NODE_ENV === 'production') {
+    // Serve static files from the React client
+    app.use(express.static(path.join(__dirname, '../client/build')));
+  }
+
+  // All other routes will be handled by the React client
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/build/index.html'));
+  });
+
+  app.listen(PORT, () => {
+    console.log(`API server running on port ${PORT}!`);
+    console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`);
+  });
+};
+
+startApolloServer();
