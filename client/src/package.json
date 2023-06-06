@@ -16,7 +16,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "watch": "node server.js"
+    "start-dev": "PORT=4000 react-scripts start"
   },
   "eslintConfig": {
     "extends": [

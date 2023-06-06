@@ -45,9 +45,9 @@ const startApolloServer = async () => {
     res.sendFile(path.join(__dirname, '../client/build/index.html'));
   });
 
-  app.listen(PORT, () => {
-    console.log(`API server running on port ${PORT}!`);
-    console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`);
+  app.listen(4001, () => {
+    console.log(`API server running on port 4001!`);
+    console.log(`Use GraphQL at http://localhost:4001${server.graphqlPath}`);
   });
 };
 
