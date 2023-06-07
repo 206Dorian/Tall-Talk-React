@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Questions from '../../client/src/components/Questions';
+import Questions from '../components/Questions';
 
 const QuestionsPage = () => {
   return (
