@@ -1,4 +1,5 @@
-const{Questions} = require ('../models')
+const {Questions} = require('../models')
+require('dotenv').config();
 
 
 // resolvers.js
