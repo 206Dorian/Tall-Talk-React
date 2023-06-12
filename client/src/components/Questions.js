@@ -1,11 +1,31 @@
-import React from 'react'
-import QButton from './QButton'
-const Questions = () => {
-  return (
-    <div>Questions
-       < QButton/>
-    </div>
-  )
-}
+import React, { useState } from 'react';
+import { useQuery } from '@apollo/client';
+import QButton from './QButton';
+import { GET_QUESTIONS } from '../utils/queries'
 
-export default Questions
+const Questions = () => {
+  const { loading, error, data } = useQuery(GET_QUESTIONS);
+  const [currentQuestion, setCurrentQuestion] = useState(null);
+
+  // Function to select a random question
+  const getQuestion = () => {
+    if (!loading && data) {
+      const questionList = data.questions;
+      const randomIndex = Math.floor(Math.random() * questionList.length);
+      setCurrentQuestion(questionList[randomIndex].text);
+    }
+  };
+
+  if (loading) return 'Loading...';
+  if (error) return `Error! ${error.message}`;
+
+  return (
+    <div>
+      Questions
+      <p>{currentQuestion}</p>
+      <QButton onClick={getQuestion} />
+    </div>
+  );
+};
+
+export default Questions;

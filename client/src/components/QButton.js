@@ -1,9 +1,9 @@
 import React from 'react'
 
-const QButton = () => {
+const QButton = ({ onClick }) => {
     return (
         <div>
-            <button>QuestionButton</button>
+            <button onClick={onClick}>QuestionButton</button>
         </div>
     )
 }

@@ -6,10 +6,7 @@ const questionSchema = new mongoose.Schema({
     required: true,
     unique: true,
   },
-//   options: {
-//     type: [String],
-//     required: true,
-//   },
+
 });
 
 const Question = mongoose.model('Question', questionSchema);

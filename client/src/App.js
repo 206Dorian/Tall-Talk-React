@@ -1,20 +1,28 @@
-// import Home from "./pages/Home";
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+
+
 import Header from './components/Header';
 import Footer from './components/Footer';
 import QuestionsPage from "./pages/QuestionsPage";
 
+// replace the uri with your GraphQL server's url
+const client = new ApolloClient({
+  uri: 'http://localhost:4000/graphql',
+  cache: new InMemoryCache(),
+});
+
 function App() {
 
   return (
-<div className="App">
+    <ApolloProvider client={client}>
+      <div className="App">
 
-<Header />
+        <Header />
+        <QuestionsPage />
+        <Footer />
 
-<QuestionsPage/>
-<Footer />
-
-</div>
-
+      </div>
+    </ApolloProvider>
 
   )
 }

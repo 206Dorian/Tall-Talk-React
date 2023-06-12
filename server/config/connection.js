@@ -12,4 +12,4 @@ mongoose.connect(dbURL, { useNewUrlParser: true, useUnifiedTopology: true })
     console.error('Error connecting to MongoDB:', error);
   });
 
-  module.exports = mongoose;
+module.exports = mongoose.connection;
