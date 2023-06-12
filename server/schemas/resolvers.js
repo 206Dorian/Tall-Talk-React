@@ -6,8 +6,17 @@ const resolvers = {
       return await Question.findById(id);
     },
     questions: async () => {
-      return await Question.find({});
+      try {
+        const questions = await Question.find({});
+        console.log('Questions from database:', questions);  // log the result of the database query
+        return questions;
+      } catch (error) {
+        console.error('Error fetching questions:', error);
+        return [];
+      }
     },
+    
+    
   },
   Mutation: {
     createQuestion: async (parent, { text }) => {

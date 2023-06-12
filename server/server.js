@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
 const path = require('path');
-const { authMiddleware } = require('./utils/auth');
+// const { authMiddleware } = require('./utils/auth');
 const { typeDefs, resolvers } = require('./schemas');
 const mongoose = require('mongoose');
 
@@ -12,7 +12,7 @@ const app = express();
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  context: authMiddleware,
+  // context: authMiddleware,
 });
 
 const connectToMongoDB = async () => {
@@ -23,10 +23,12 @@ const connectToMongoDB = async () => {
       useUnifiedTopology: true,
     });
     console.log('Connected to MongoDB Atlas');
+    console.log('Current database:', mongoose.connection.db.databaseName);
   } catch (error) {
     console.error('Error connecting to MongoDB Atlas:', error);
   }
 };
+
 
 
 const startApolloServer = async () => {
@@ -44,6 +46,8 @@ const startApolloServer = async () => {
   app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/build/index.html'));
   });
+
+
 
   app.listen(PORT, () => {
     console.log(`API server running on port ${PORT}!`);
