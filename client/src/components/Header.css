@@ -9,4 +9,24 @@
     font-family: 'Alegreya Sans SC', sans-serif;
   }
   
+  h1 {
+    font-size: 60px;
+    position: relative;
+    text-align: center;
+    color: var(--aqua);
+    margin-top: 1px;
+    margin-bottom: 1px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    
+  }
   
+  h2 {
+    font-size: 40px;
+    position: relative;
+    text-align: center;
+    color: var(--aqua);
+    margin-top: 1px;
+    margin-top: 20px;
+  
+    font-family: 'Alegreya Sans SC', sans-serif;
+  }

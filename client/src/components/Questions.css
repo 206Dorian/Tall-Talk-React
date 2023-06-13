@@ -1,24 +1,28 @@
 .card {
-
   background-color: var(--payneGrey);
-  position: relative;
-  width: 70%;
-  height: 35%;
-  margin: 15%;
-  text-align: center;
-  color: var(--palePink);
-  border-radius: .5rem;
-  clear: both;
-  /* Add this property to clear the float */
   border: 3px solid var(--offMint);
   border-radius: 30px;
-  /* Add border property */
-  font-size: 25px;
-  inset: 0;
-
-  animation: glowing 5s infinite;
-
-  margin-top: 20px;
-  margin-bottom: 10px;
+  clear: both;
+  color: var(--palePink);
   font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 25px;
+  height: 35%;
+  inset: 0;
+  margin: 15% 15% 40px;
+  position: relative;
+  text-align: center;
+  width: 70%;
+  animation: glowing 5s infinite;
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px aqua;
+  }
+  50% {
+    box-shadow: 0 0 20px aqua, 0 0 40px #fff, 0 0 60px #fff;
+  }
+  100% {
+    box-shadow: 0 0 5px #fff;
+  }
 }

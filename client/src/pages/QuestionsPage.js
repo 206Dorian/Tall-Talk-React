@@ -5,7 +5,7 @@ import Questions from '../components/Questions';
 const QuestionsPage = () => {
   return (
     <div>
-     <p>This is the ?? page</p>
+     <h2>This is the ?? page</h2>
       <Questions />
       
     </div>
