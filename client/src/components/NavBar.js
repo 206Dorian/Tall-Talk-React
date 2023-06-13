@@ -1,19 +1,18 @@
-import React from 'react'
+import React from 'react';
 import './NavBar.css';
 
 const NavBar = () => {
   return (
-    <div className="NavBar">
-      NavBar
+    <nav className="NavBar">
       <div className="dropdown">
-        <span>Menu</span>
+        <button className="dropbtn">Dropdown</button>
         <div className="dropdown-content">
           <a href="#">Link 1</a>
           <a href="#">Link 2</a>
           <a href="#">Link 3</a>
         </div>
       </div>
-    </div>
+    </nav>
   )
 }
 

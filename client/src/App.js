@@ -19,8 +19,8 @@ function App() {
     <ApolloProvider client={client}>
       <div className="App">
 
-        <Header />
         <NavBar />
+        <Header />
         <QuestionsPage />
         <Footer />
 
