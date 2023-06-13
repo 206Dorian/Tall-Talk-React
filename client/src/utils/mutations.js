@@ -8,3 +8,18 @@ export const CREATE_QUESTION = gql`
     }
   }
 `;
+
+export const UPDATE_QUESTION = gql`
+  mutation UpdateQuestion($updateQuestionId: ID!, $text: String!) {
+    updateQuestion(id: $updateQuestionId, text: $text) {
+    id
+    text
+  }
+}
+`;
+
+export const DELETE_QUESTION = gql`
+  mutation DeleteQuestion($deleteQuestionId: ID!) {
+    deleteQuestion(id: $deleteQuestionId)
+}
+`;
