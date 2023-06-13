@@ -4,11 +4,12 @@ import React from 'react'
 
 const Home = () => {
     return (
-        <div>
+        <div className="body">
 
-            <div>This is home</div>
-            <div className="QuestionComponent">Questions
-            <Questions />
+            <h1 className="h1">This is home</h1>
+            <div className="navbar">
+                <h2 className="h2">Questions</h2>
+                <Questions />
             </div>
         </div>
     )

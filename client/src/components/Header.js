@@ -1,9 +1,14 @@
-import React from 'react'
+// Header.js
 
-const Header = () => {
+import React from 'react';
+import './Header.css';
+
+function Header() {
   return (
-    <div>Header</div>
-  )
+    <header className="header">
+      Your header content goes here.
+    </header>
+  );
 }
 
-export default Header
+export default Header;

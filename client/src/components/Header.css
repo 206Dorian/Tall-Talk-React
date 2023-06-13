@@ -1,0 +1,12 @@
+/* Header.css */
+
+.header {
+    background-color: var(--dusk);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 2em;
+    font-family: 'Alegreya Sans SC', sans-serif;
+  }
+  
+  

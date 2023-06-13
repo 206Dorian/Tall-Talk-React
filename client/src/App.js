@@ -1,5 +1,7 @@
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
-
+// import 'NavBar.js'
+// import './App.css';
+// import './NavBar.css';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
