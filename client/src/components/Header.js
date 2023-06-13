@@ -6,7 +6,8 @@ import './Header.css';
 function Header() {
   return (
     <header className="header">
-      Your header content goes here.
+      <h1>Tall Talk</h1>
+      <h2>Because I have no time for small talk...</h2>
     </header>
   );
 }

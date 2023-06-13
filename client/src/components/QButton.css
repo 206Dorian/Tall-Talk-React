@@ -1,0 +1,20 @@
+
+.button {
+    background-color: var(--payneGrey);
+    position: relative;
+    width: 60%;
+    height: 45%;
+    margin: 10%;
+    text-align: center;
+    color: var(--palePink);
+  
+  
+    border: 5px solid var(--offMint);
+    border-radius: 30px;
+    /* Add border property */
+    font-size: 25px;
+    inset: 0;
+    transition: background-color 0.3s ease;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    
+  }

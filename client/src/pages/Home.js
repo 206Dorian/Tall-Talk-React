@@ -10,6 +10,7 @@ const Home = () => {
             <div className="NavBar">
                 <h2 className="h2">Questions</h2>
                 <Questions />
+                <QButton />
             </div>
         </div>
     )

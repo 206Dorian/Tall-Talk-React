@@ -36,7 +36,7 @@
   
 }
 
-.NavBar {
+/* .NavBar {
   background-color: var(--timberwolf);
   position: relative;
   width: 70%;
@@ -46,16 +46,13 @@
   color: var(--outerspace);
   border-radius: .5rem;
   clear: both;
-  /* Add this property to clear the float */
-  /* border: 3px solid var(--offMint); */
-  border-radius: 30px;
-  /* Add border property */
-  font-size: 25px;
+   border-radius: 30px;
+   font-size: 25px;
   inset: 0;
   margin-top: 10px;
   margin-bottom: 15px;
   font-family: 'Alegreya Sans SC', sans-serif;
-}
+} */
 
 
 
@@ -68,50 +65,8 @@ body {
 
 }
 
-.card {
-
-  background-color: var(--payneGrey);
-  position: relative;
-  width: 70%;
-  height: 35%;
-  margin: 15%;
-  text-align: center;
-  color: var(--palePink);
-  border-radius: .5rem;
-  clear: both;
-  /* Add this property to clear the float */
-  border: 3px solid var(--offMint);
-  border-radius: 30px;
-  /* Add border property */
-  font-size: 25px;
-  inset: 0;
-
-  animation: glowing 5s infinite;
-
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-family: 'Alegreya Sans SC', sans-serif;
-}
-
-.button {
-  background-color: var(--payneGrey);
-  position: relative;
-  width: 60%;
-  height: 45%;
-  margin: 10%;
-  text-align: center;
-  color: var(--palePink);
 
 
-  border: 5px solid var(--offMint);
-  border-radius: 30px;
-  /* Add border property */
-  font-size: 25px;
-  inset: 0;
-  transition: background-color 0.3s ease;
-  font-family: 'Alegreya Sans SC', sans-serif;
-  
-}
 
 .button:hover {
   background-color: #999;
@@ -138,24 +93,3 @@ body {
   font-family: 'Alegreya Sans SC', sans-serif;
 }
 
-.footer {
-  background-color: var(--payneGrey);
-  position: relative;
-  width: 90%;
-  height: 90%;
-  margin: 5%;
-  text-align: center;
-  color: var(--palePink);
-  border-radius: .5rem;
-  clear: both;
-  /* Add this property to clear the float */
-  border: 3px solid var(--offMint);
-  border-radius: 30px;
-  /* Add border property */
-  font-size: 25px;
-  inset: 0;
-  margin-top: 10px;
-  margin-top: 10px;
-  font-family: 'Alegreya Sans SC', sans-serif;
-
-}

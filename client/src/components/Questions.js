@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useQuery } from '@apollo/client';
 import QButton from './QButton';
 import { GET_QUESTIONS } from '../utils/queries'
+import './Questions.css';
 
 const Questions = () => {
   const { loading, error, data } = useQuery(GET_QUESTIONS);
@@ -25,7 +26,7 @@ const Questions = () => {
   if (error) return `Error! ${error.message}`;
 
   return (
-    <div>
+    <div className='card'>
       Questions
       <p>{currentQuestion}</p>
       <QButton onClick={getQuestion} />
