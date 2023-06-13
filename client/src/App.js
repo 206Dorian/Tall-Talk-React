@@ -1,11 +1,11 @@
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
-// import 'NavBar.js'
-// import './App.css';
-// import './NavBar.css';
-
+import React from 'react';
+import './App.css';
+import NavBar from './components/NavBar';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import QuestionsPage from "./pages/QuestionsPage";
+
 
 // replace the uri with your GraphQL server's url
 const client = new ApolloClient({
@@ -20,6 +20,7 @@ function App() {
       <div className="App">
 
         <Header />
+        <NavBar />
         <QuestionsPage />
         <Footer />
 
