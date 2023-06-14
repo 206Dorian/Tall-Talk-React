@@ -5,7 +5,7 @@ import NavBar from './components/NavBar';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import QuestionsPage from "./pages/QuestionsPage";
-
+import QButton from './components/QButton';
 
 // replace the uri with your GraphQL server's url
 const client = new ApolloClient({
@@ -22,6 +22,7 @@ function App() {
         <NavBar />
         <Header />
         <QuestionsPage />
+       
         <Footer />
 
       </div>

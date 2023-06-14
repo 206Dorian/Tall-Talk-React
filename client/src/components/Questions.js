@@ -26,11 +26,13 @@ const Questions = () => {
   if (error) return `Error! ${error.message}`;
 
   return (
+    <div>
     <div className='card'>
       Questions
       <p>{currentQuestion}</p>
-      <QButton onClick={getQuestion} />
     </div>
+    <QButton onClick={getQuestion} />
+  </div>
   );
 };
 
