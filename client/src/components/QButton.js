@@ -1,4 +1,5 @@
 import React from 'react'
+import './QButton.css';
 
 const QButton = ({ onClick }) => {
     return (

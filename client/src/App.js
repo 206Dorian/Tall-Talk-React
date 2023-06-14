@@ -22,8 +22,7 @@ function App() {
         <NavBar />
         <Header />
         <QuestionsPage />
-       
-        <Footer />
+               <Footer />
 
       </div>
     </ApolloProvider>

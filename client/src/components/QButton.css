@@ -1,4 +1,4 @@
-.button {
+button {
   background-color: var(--payneGrey);
   position: relative;
   width: 60%;
@@ -17,7 +17,7 @@
   font-family: 'Alegreya Sans SC', sans-serif;
 }
 
-.button:hover {
+button:hover {
   background-color: #999;
   color: #000;
 }
