@@ -6,12 +6,12 @@
   color: var(--palePink);
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 25px;
-  height: 55%;
+  height: 60%;
   inset: 0;
-  margin: 15% 15% 40px;
+  margin: 15% 15% 25px;
   position: relative;
   text-align: center;
-  width: 80%;
+  width: 70%;
   /* height: 60%; */
   animation: glowing 5s infinite;
 }
