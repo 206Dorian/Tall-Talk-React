@@ -28,8 +28,10 @@ const Questions = () => {
   return (
     <div>
     <div className='card'>
-      Questions
+      <br/>
+      Question here:
       <p>{currentQuestion}</p>
+      <br/>
     </div>
     <QButton onClick={getQuestion} />
   </div>

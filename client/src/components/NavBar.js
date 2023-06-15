@@ -5,9 +5,9 @@ const NavBar = () => {
   return (
     <nav className="NavBar">
       <div className="dropdown">
-        <button className="dropbtn">Dropdown</button>
+        {/* <button className="dropbtn">Dropdown</button> */}
         <div className="dropdown-content">
-          <a href="#"> Add </a>
+          <a href="#"> Add a Question</a>
           <a href="#"> Befriend</a>
           <a href="#"> Comment or like</a>
         </div>
