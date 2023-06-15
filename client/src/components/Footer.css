@@ -1,9 +1,9 @@
 .footer {
     background-color: var(--payneGrey);
     position: relative;
-    width: 90%;
-    height: 90%;
-    margin: 5%;
+    width: 80%;
+    height: 100%;
+    margin: 10%;
     text-align: center;
     color: var(--palePink);
     border-radius: .5rem;
@@ -15,7 +15,7 @@
     font-size: 25px;
     inset: 0;
     margin-top: 10px;
-    margin-top: 10px;
+    margin-bottom: 0px;
     font-family: 'Alegreya Sans SC', sans-serif;
   
   }

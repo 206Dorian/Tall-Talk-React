@@ -7,9 +7,9 @@ const NavBar = () => {
       <div className="dropdown">
         <button className="dropbtn">Dropdown</button>
         <div className="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+          <a href="#"> Add </a>
+          <a href="#"> Befriend</a>
+          <a href="#"> Comment or like</a>
         </div>
       </div>
     </nav>
