@@ -6,6 +6,10 @@ const typeDefs = gql`
     text: String!
   }
 
+  input QuestionInput {
+    text: String!
+  }
+
   type Query {
     question(id: ID!): Question
     questions: [Question]
@@ -13,6 +17,7 @@ const typeDefs = gql`
 
   type Mutation {
     createQuestion(text: String!): Question
+    createBulkQuestions(questions: [QuestionInput!]!): [Question]
     updateQuestion(id: ID!, text: String!): Question
     deleteQuestion(id: ID!): ID
   }

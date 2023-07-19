@@ -18,11 +18,26 @@ const resolvers = {
     
     
   },
+
   Mutation: {
     createQuestion: async (parent, { text }) => {
       const newQuestion = new Question({ text });
       return await newQuestion.save();
     },
+
+    createBulkQuestions: async (parent, { questions }) => {
+      const createdQuestions = [];
+
+      for (const questionData of questions) {
+        const { text } = questionData;
+        const newQuestion = new Question({ text });
+        const createdQuestion = await newQuestion.save();
+        createdQuestions.push(createdQuestion);
+      }
+
+      return createdQuestions;
+    },
+
     updateQuestion: async (parent, { id, text }) => {
       return await Question.findByIdAndUpdate(id, { text }, { new: true }); // { new: true } option returns the updated document
     },

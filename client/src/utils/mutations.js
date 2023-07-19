@@ -9,6 +9,15 @@ export const CREATE_QUESTION = gql`
   }
 `;
 
+const ADD_QUESTIONS = gql`
+  mutation CreateBulkQuestions($questions: [QuestionInput!]!) {
+    createBulkQuestions(questions: $questions) {
+      id
+      text
+    }
+  }
+`;
+
 export const UPDATE_QUESTION = gql`
   mutation UpdateQuestion($updateQuestionId: ID!, $text: String!) {
     updateQuestion(id: $updateQuestionId, text: $text) {
