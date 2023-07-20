@@ -28,8 +28,7 @@ const Questions = () => {
   return (
     <div>
     <div className='card'>
-      <br/>
-      Question here:
+            <br/>
       <p>{currentQuestion}</p>
       <br/>
     </div>

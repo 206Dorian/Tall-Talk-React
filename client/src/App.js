@@ -23,7 +23,7 @@ function App() {
         <Header />
         <QuestionsPage />
                <Footer />
-
+      <br/>
       </div>
     </ApolloProvider>
 
