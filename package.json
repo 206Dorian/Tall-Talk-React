@@ -1,30 +1,6 @@
 {
   "name": "tall-talk-react",
   "version": "1.0.0",
-  
-  
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node server/server.js",
-    "develop": "concurrently \"cd server && npm run start\" \"cd client && npm start\"",
-    "seed": "cd server && npm run seed",
-    "build": "cd client && npm run build"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "concurrently": "^5.1.0"
-  },
-  "dependencies": {
-    "dotenv": "^16.1.4",
-    "react-scripts": "^2.1.3"
-  }
-}
-{
-  "name": "tall-talk-react",
-  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -38,30 +14,6 @@
   "license": "ISC",
   "engines": {
     "node": "14.x"
-  },
-  "devDependencies": {
-    "concurrently": "^5.1.0"
-  },
-  "dependencies": {
-    "dotenv": "^16.1.4",
-    "react-scripts": "^2.1.3"
-  }
-}
-{
-  "name": "tall-talk-react",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node server/server.js",
-    "develop": "concurrently \"cd server && npm run start\" \"cd client && npm start\"",
-    "seed": "cd server && npm run seed",
-    "build": "cd client && npm run build"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  
   },
   "devDependencies": {
     "concurrently": "^5.1.0"
