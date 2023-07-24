@@ -61,8 +61,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "engines": {
-    "node": "14.17.6"
+  
   },
   "devDependencies": {
     "concurrently": "^5.1.0"
