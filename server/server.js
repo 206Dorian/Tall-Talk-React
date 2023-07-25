@@ -29,6 +29,7 @@ const connectToMongoDB = async () => {
   }
 };
 
+ 
 
 
 const startApolloServer = async () => {
@@ -39,7 +40,7 @@ const startApolloServer = async () => {
 
   if (process.env.NODE_ENV === 'production') {
     // Serve static files from the React client
-    app.use(express.static(path.join(__dirname, '../client/build')));
+   app.use(express.static(path.join(__dirname,"client", "build")));
   }
 
   // All other routes will be handled by the React client
