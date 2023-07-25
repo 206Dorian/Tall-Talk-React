@@ -43,9 +43,9 @@ const startApolloServer = async () => {
   }
 
   // All other routes will be handled by the React client
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/build/index.html'));
-  });
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname,"client", "build", "index.html"));
+});
 
 
 
