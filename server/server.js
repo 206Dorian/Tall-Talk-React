@@ -29,8 +29,6 @@ const connectToMongoDB = async () => {
   }
 };
 
- 
-
 
 const startApolloServer = async () => {
   await server.start();
@@ -38,15 +36,18 @@ const startApolloServer = async () => {
 
   connectToMongoDB();
 
+  const clientBuildPath = path.resolve(__dirname, '..', 'client', 'build');
+
   if (process.env.NODE_ENV === 'production') {
     // Serve static files from the React client
-   app.use(express.static(path.join(__dirname,"client", "build")));
+    app.use(express.static(clientBuildPath));
   }
-
+  
   // All other routes will be handled by the React client
   app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname,"client", "build", "index.html"));
-});
+    res.sendFile(path.join(clientBuildPath, "index.html"));
+  });
+  
 
 
 
