@@ -15,7 +15,7 @@ const server = new ApolloServer({
   resolvers,
   // context: authMiddleware,
 });
-app.use
+app.use(cors());
 
 const connectToMongoDB = async () => {
   try {
