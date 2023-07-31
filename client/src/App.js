@@ -1,4 +1,4 @@
-import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink } from '@apollo/client';
 import React from 'react';
 import './App.css';
 import NavBar from './components/NavBar';
@@ -6,10 +6,13 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import QuestionsPage from "./pages/QuestionsPage";
 import QButton from './components/QButton';
+const httpLink = createHttpLink({
+  uri: "/graphql",
+});
 
 // replace the uri with your GraphQL server's url
 const client = new ApolloClient({
-  uri: 'http://localhost:4000/graphql'||'https://tall-talk-1dfa9fc02377.herokuapp.com/graphql',
+  link: httpLink,
   cache: new InMemoryCache(),
 });
 
