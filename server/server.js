@@ -5,6 +5,7 @@ const path = require('path');
 // const { authMiddleware } = require('./utils/auth');
 const { typeDefs, resolvers } = require('./schemas');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 
 const PORT = process.env.PORT || 4000;
@@ -14,6 +15,7 @@ const server = new ApolloServer({
   resolvers,
   // context: authMiddleware,
 });
+app.use
 
 const connectToMongoDB = async () => {
   try {
@@ -48,6 +50,7 @@ const startApolloServer = async () => {
     res.sendFile(path.join(clientBuildPath, "index.html"));
   });
   
+
 
 
   app.listen(PORT, () => {

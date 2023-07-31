@@ -7,29 +7,26 @@ import Footer from './components/Footer';
 import QuestionsPage from "./pages/QuestionsPage";
 import QButton from './components/QButton';
 
-// Set the default server URL here (your deployed Heroku URL)
-const defaultServerUrl = 'https://tall-talk-1dfa9fc02377.herokuapp.com/graphql';
-
-// Use the environment variable if set, otherwise fallback to the default URL
-const serverUrl = process.env.REACT_APP_GRAPHQL_SERVER || defaultServerUrl;
-
+// replace the uri with your GraphQL server's url
 const client = new ApolloClient({
-  uri: serverUrl,
+  uri: 'http://localhost:4000/graphql',
   cache: new InMemoryCache(),
 });
 
 function App() {
+
   return (
     <ApolloProvider client={client}>
       <div className="App">
+
         <NavBar />
         <Header />
         <QuestionsPage />
-        <Footer />
-        <br />
+               <Footer />
+      <br/>
       </div>
     </ApolloProvider>
-  );
-}
 
+  )
+}
 export default App;
