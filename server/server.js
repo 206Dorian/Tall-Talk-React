@@ -6,7 +6,11 @@ const path = require('path');
 const { typeDefs, resolvers } = require('./schemas');
 const mongoose = require('mongoose');
 const cors = require('cors');
-
+const corsOptions = {
+  origin: 'https://example.com', // Replace this with the allowed origin for your frontend app
+  methods: ['GET', 'POST'], // Specify the allowed HTTP methods
+  allowedHeaders: ['Content-Type', 'Authorization'], // Specify the allowed request headers
+};
 
 const PORT = process.env.PORT || 4000;
 const app = express();
@@ -15,7 +19,7 @@ const server = new ApolloServer({
   resolvers,
   // context: authMiddleware,
 });
-app.use(cors());
+app.use(cors(corsOptions));
 
 const connectToMongoDB = async () => {
   try {
