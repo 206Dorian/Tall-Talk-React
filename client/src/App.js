@@ -9,7 +9,7 @@ import QButton from './components/QButton';
 
 // replace the uri with your GraphQL server's url
 const client = new ApolloClient({
-  uri: 'https://tall-talk-1dfa9fc02377.herokuapp.com/graphql',
+  uri: 'http://localhost:4000/graphql'||'https://tall-talk-1dfa9fc02377.herokuapp.com/graphql',
   cache: new InMemoryCache(),
 });
 
@@ -29,4 +29,4 @@ function App() {
 
   )
 }
-export default App;git status
+export default App;
