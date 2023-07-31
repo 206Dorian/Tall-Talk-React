@@ -2,7 +2,7 @@
   "name": "tall-talk-react",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "start": "node server/server.js",
     "develop": "concurrently \"cd server && npm run start\" \"cd client && npm start\"",
