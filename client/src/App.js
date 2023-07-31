@@ -9,7 +9,7 @@ import QButton from './components/QButton';
 
 // replace the uri with your GraphQL server's url
 const client = new ApolloClient({
-  uri: 'http://localhost:4000/graphql',
+  uri: 'https://tall-talk-1dfa9fc02377.herokuapp.com/graphql',
   cache: new InMemoryCache(),
 });
 
@@ -22,11 +22,11 @@ function App() {
         <NavBar />
         <Header />
         <QuestionsPage />
-               <Footer />
-      <br/>
+        <Footer />
+        <br />
       </div>
     </ApolloProvider>
 
   )
 }
-export default App;
+export default App;git status
