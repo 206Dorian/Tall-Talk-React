@@ -1,14 +1,14 @@
 :root {
   --dorianGrey: #2F3C42;
-  --dusk: #114B5F;
+  --dusk: #13869f;
   --outerspace: #44565F;
   --payneGrey: #586F7C;
-  --aqua: aqua;
-  --mint: #A0C0C2;
+  --aqua: rgb(21, 211, 211);
+  --mint: #84bfc3;
   --offWhite: #E5EEF1;
   --offMint: #B8DBD9;
-  --palePink: #e9cdcd;
-  --timberwolf: #E5DAD9;
+  --palePink: #e3c5c5;
+  --timberwolf: #b1afae;
 
 }
 
