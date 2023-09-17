@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 const corsOptions = {
-  origin: 'https://tall-talk-1dfa9fc02377.herokuapp.com/', 
+  origin: 'https://tall-talk-1dfa9fc02377.herokuapp.com', 
   methods: ['GET', 'POST'], // Specify the allowed HTTP methods
   allowedHeaders: ['Content-Type', 'Authorization'], // Specify the allowed request headers
 };
@@ -19,8 +19,12 @@ const server = new ApolloServer({
   resolvers,
 });
 
-// Enable CORS for all routes with the specified options
-app.use(cors(corsOptions));
+// Enable CORS based on the environment
+if (process.env.NODE_ENV === 'production') {
+    app.use(cors(corsOptions));  // Use the restricted options for production
+} else {
+    app.use(cors());  // Open it up for development
+}
 
 const connectToMongoDB = async () => {
   try {
@@ -38,7 +42,7 @@ const connectToMongoDB = async () => {
 
 const startApolloServer = async () => {
   await server.start();
-  server.applyMiddleware({ app });
+  server.applyMiddleware({ app, path: '/graphql' });
 
   connectToMongoDB();
 
