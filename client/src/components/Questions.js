@@ -17,6 +17,7 @@ const Questions = () => {
       const randomIndex = Math.floor(Math.random() * questionList.length);
       setCurrentQuestion(questionList[randomIndex].text);
     }
+    
     else {
       console.log('No question available');
     }
