@@ -11,7 +11,7 @@ const NavBar = () => {
           <br></br>
           <a href="#"> B</a>
           <br></br>
-          <a href="#"> C</a>
+          
         </div>
       </div>
     </nav>

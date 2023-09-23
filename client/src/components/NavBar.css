@@ -1,16 +1,24 @@
+.container {
+    position: relative; /* Create a positioning context for absolute positioning */
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Adjust the height as needed */
+}
 .NavBar {
-    position: fixed;
-        width: 50%;
-    height: 20%;
+    position: relative;
+    width: 70%;
+    height: 30%;
     text-align: center;
     color: var(--outerspace);
+    background-color: var(--outerspace);
     border-radius: .5rem;
     font-size: 25px;
     font-family: 'Alegreya Sans SC', sans-serif;
-    z-index: 1000;
+    border: 3px solid var(--offMint);
+    border-radius: 30px;
+    inset: 0;
 }
 
 a:visited {
-    color: black; /* Set the color to black for visited links */
-  }
-  
+    color: black;
+    /* Set the color to black for visited links */
+}

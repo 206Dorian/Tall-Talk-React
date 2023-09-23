@@ -24,6 +24,7 @@ function App() {
 
         <Header />
         <QuestionsPage />
+        <br></br>
         <NavBar />
         <Footer />
         <br />

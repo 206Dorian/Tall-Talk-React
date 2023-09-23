@@ -10,12 +10,10 @@ const Home = () => {
 
     return (
         <div className="body">
-            <h1 className="h1">This is home</h1>
-            <h2 className="h2">Questions</h2>
+            
             <Questions />
             <NavBar />
-            {/* <div className="NavBar">
-            </div> */}
+           
         </div>
     )
 }
