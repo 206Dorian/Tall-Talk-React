@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --dorianGrey: #2F3C42;
     --dusk: #114B5F;
     --outerspace: #44565F;
@@ -36,7 +36,7 @@
     border: 5px solid var(--offMint);
     border-radius: 30px;
     /* Add border property */
-    font-size: 25px;
+    /* font-size: 25px;
     inset: 0;
     transition: background-color 0.3s ease;
     font-family: 'Alegreya Sans SC', sans-serif;
@@ -46,4 +46,4 @@
   
   
   
-  
+   */ 

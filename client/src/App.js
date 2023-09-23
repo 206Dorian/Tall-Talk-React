@@ -25,7 +25,7 @@ function App() {
         <Header />
         <QuestionsPage />
         <br></br>
-        <NavBar />
+        {/* <NavBar /> */}
         <Footer />
         <br />
       </div>

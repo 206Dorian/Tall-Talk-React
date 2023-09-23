@@ -5,7 +5,7 @@
     height: 100%;
     margin: 10%;
     text-align: center;
-    color: var(--palePink);
+    color: var(--offMint);
     border-radius: .5rem;
     clear: both;
     /* Add this property to clear the float */

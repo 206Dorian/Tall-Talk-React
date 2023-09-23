@@ -13,7 +13,6 @@
 }
 
 
-
 body {
   min-height: 100vh;
   display: grid;
@@ -21,10 +20,3 @@ body {
   background: var(--dusk);
 
 }
-
-
-.bttn {
-  /* background-color: #8dcbe8; */
-  font-family: 'Alegreya Sans SC', sans-serif;
-}
-
