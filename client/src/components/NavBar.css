@@ -1,13 +1,16 @@
 .NavBar {
     position: fixed;
-    top: 0;
-    right: 0;
-    background-color: var(--timberwolf);
-    width: 5%;
-    height: 10%;
+        width: 50%;
+    height: 20%;
     text-align: center;
     color: var(--outerspace);
     border-radius: .5rem;
     font-size: 25px;
     font-family: 'Alegreya Sans SC', sans-serif;
+    z-index: 1000;
 }
+
+a:visited {
+    color: black; /* Set the color to black for visited links */
+  }
+  

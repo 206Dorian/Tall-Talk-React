@@ -24,13 +24,13 @@
   
   
   .button {
-    background-color: var(--payneGrey);
+    background-color: var(--dorianGrey);
     position: relative;
     width: 60%;
     height: 45%;
     margin: 10%;
     text-align: center;
-    color: var(--palePink);
+    color: var(--dorianGrey);
   
   
     border: 5px solid var(--offMint);

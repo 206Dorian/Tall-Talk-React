@@ -22,9 +22,9 @@ function App() {
     <ApolloProvider client={client}>
       <div className="App">
 
-        <NavBar />
         <Header />
         <QuestionsPage />
+        <NavBar />
         <Footer />
         <br />
       </div>
