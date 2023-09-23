@@ -1,8 +1,3 @@
-.container {
-    position: relative; /* Create a positioning context for absolute positioning */
-    width: 100%; /* Adjust the width as needed */
-    height: auto; /* Adjust the height as needed */
-}
 .NavBar {
     position: relative;
     width: 70%;
@@ -14,7 +9,7 @@
     font-size: 25px;
     font-family: 'Alegreya Sans SC', sans-serif;
     border: 3px solid var(--offMint);
-    border-radius: 30px;
+    border-radius: 20px;
     inset: 0;
 }
 
