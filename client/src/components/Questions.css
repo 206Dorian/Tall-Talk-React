@@ -1,6 +1,6 @@
 .card {
   background-color: var(--payneGrey);
-  border: 3px solid var(--offMint);
+  border: 4px solid var(--offMint);
   border-radius: 30px;
   clear: both;
   color: var(--palePink);
@@ -8,20 +8,20 @@
   font-size: 30px;
   height: 70%;
   inset: 0;
-  margin: 15% 15% 25px;
+  margin: 10% 10% 25px;
   position: relative;
   text-align: center;
-  width: 70%;
+  width: 80%;
   /* height: 60%; */
-  animation: glowing 4s infinite;
+  animation: glowing 5s infinite;
 }
 
 @keyframes glowing {
   0% {
     box-shadow: 0 0 5px aqua;
   }
-  50% {
-    box-shadow: 0 0 20px aqua, 0 0 40px #fff, 0 0 60px #fff;
+  60% {
+    box-shadow: 0 0 20px aqua, 0 0 40px #fff, 0 0 70px #fff;
   }
   100% {
     box-shadow: 0 0 5px #fff;
