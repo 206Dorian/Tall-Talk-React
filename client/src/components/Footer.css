@@ -1,9 +1,9 @@
 .footer {
     background-color: var(--payneGrey);
     position: relative;
-    width: 80%;
+    width: 90%;
     height: 100%;
-    margin: 10%;
+    margin: 5%;
     text-align: center;
     color: var(--offMint);
     border-radius: .5rem;
