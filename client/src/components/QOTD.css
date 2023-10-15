@@ -1,0 +1,10 @@
+.Banner {
+    background-color: var(--palePink); /* Set your desired banner color */
+    color: var(--payneGrey); /* Set text color */
+    padding: 5px; /* Add padding to create spacing */
+    text-align: center; /* Center align text */
+    font-size: 24px; /* Adjust font size as needed */
+    font-weight: bold; /* Make the text bold if desired */
+  }
+  
+  
