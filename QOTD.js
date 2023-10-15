@@ -5,10 +5,10 @@ function selectRandomQuestion() {
   // Replace this with your logic to select a random question
   // For example, you might have an array of questions and pick one randomly.
   const questions = [
-    'Question 1',
-    'Question 2',
-    'Question 3',
-    // Add more questions to the array
+    'What are your two favorite colors when put togther?',
+    'What is YOur favorite Season?',
+    'What is your favorite TV show right now?',
+    // Need to add more questions to the array
   ];
 
   const randomIndex = Math.floor(Math.random() * questions.length);
