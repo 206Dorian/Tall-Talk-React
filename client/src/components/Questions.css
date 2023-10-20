@@ -1,20 +1,22 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Center vertically within the viewport height */
+}
+
 .card {
   background-color: var(--payneGrey);
   border: 4px solid var(--offMint);
   border-radius: 30px;
-  clear: both;
   color: var(--palePink);
   font-family: 'Alegreya Sans SC', sans-serif;
-  font-size: 30px;
-  height: 150%;
-  inset: 0;
-  margin: 10px;
-  padding: 20px;
-  position: relative;
+  font-size: 33px; /* Adjust the font size as needed */
+  width: 800px; /* Set a fixed width for the card */
+  height: 220px; /* Set a fixed height for the card */
   text-align: center;
-  width: 80%;
-  height: 60%;
-  box-sizing: border-box; 
+  padding:0px 25px; 
+  box-sizing: border-box;
   animation: glowing 5s infinite;
 }
 
