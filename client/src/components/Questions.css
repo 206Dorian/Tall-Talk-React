@@ -17,7 +17,7 @@
   text-align: center;
   padding:0px 25px; 
   box-sizing: border-box;
-  animation: glowing 5s infinite;
+  animation: glowing 4s infinite;
 }
 
 @keyframes glowing {
