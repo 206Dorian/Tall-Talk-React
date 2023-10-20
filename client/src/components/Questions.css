@@ -31,3 +31,13 @@
     box-shadow: 0 0 5px #fff;
   }
 }
+
+@media (max-width: 768px) {
+  /* Define styles for mobile devices here */
+  .card {
+    /* Adjust card size for mobile */
+    width: 90%; /* You can adjust the width as needed */
+    font-size: 20px; /* Adjust font size for mobile */
+    /* Add any other mobile-specific styles here */
+  }
+}
