@@ -18,6 +18,6 @@ button {
 }
 
 button:hover {
-  background-color: #999;
-  color: #000;
+  background-color: var(--palePink);
+  color: var(--dorianGrey);
 }
