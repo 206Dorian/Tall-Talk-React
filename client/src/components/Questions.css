@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Center vertically within the viewport height */
+  min-height: 100vh; /* Center vertically within the viewport height */
 }
 
 .card {
@@ -11,8 +11,8 @@
   border-radius: 30px;
   color: var(--palePink);
   font-family: 'Alegreya Sans SC', sans-serif;
-  font-size: 33px; /* Adjust the font size as needed */
-  width: 800px; /* Set a fixed width for the card */
+  font-size: 30px; 
+  width: 800px; 
   height: 220px; /* Set a fixed height for the card */
   text-align: center;
   padding:0px 25px; 
@@ -36,8 +36,8 @@
   /* Define styles for mobile devices here */
   .card {
     /* Adjust card size for mobile */
-    width: 90%; /* You can adjust the width as needed */
+    width: 80%; /* You can adjust the width as needed */
     font-size: 30px; /* Adjust font size for mobile */
-    /* Add any other mobile-specific styles here */
+    margin: 0 auto;
   }
 }
