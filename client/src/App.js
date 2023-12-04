@@ -23,7 +23,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <div className="App">
-        <QOTD />
+        {/* <QOTD /> */}
         <Header />
         <QuestionsPage />
         <br></br>
