@@ -8,8 +8,7 @@
   --offWhite: #E5EEF1;
   --offMint: #68bfca;
   --palePink: #e3d7e1;
-  
-  --timberwolf: #6f757c;
+    --timberwolf: #6f757c;
 }
 
 .card-container {
@@ -20,7 +19,7 @@
 }
 
 .card {
-  background-color: var(--dorianGrey);
+  background-color: var(--payneGrey);
   border: 4px solid var(--offMint);
   border-radius: 30px;
   color: var(--palePink);
@@ -36,7 +35,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 @keyframes glowing {

@@ -1,3 +1,16 @@
+:root {
+  --dorianGrey: #2F3C42;
+  --dusk: #034754;
+  --outerspace: #44565F;
+  --payneGrey: #576065;
+  --aqua: rgb(30, 238, 238);
+  --mint: #16d9e7;
+  --offWhite: #E5EEF1;
+  --offMint: #68bfca;
+  --palePink: #e3d7e1;
+    --timberwolf: #6f757c;
+}
+
 button {
   background-color: var(--payneGrey);
   position: relative;
@@ -5,7 +18,7 @@ button {
   height: 150px;
   margin: 10% 25%;
   text-align: center;
-  color: var(--offWhite);
+  color: var(--palePink);
 
 
   border: 5px solid var(--offMint);
@@ -18,6 +31,6 @@ button {
 }
 
 button:hover {
-  background-color: var(--palePink);
+  background-color: var(--timberwolf);
   color: var(--dorianGrey);
 }
