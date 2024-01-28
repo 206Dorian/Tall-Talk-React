@@ -29,9 +29,13 @@
   width: 800px; 
   height: 250px; /* Set a fixed height for the card */
   text-align: center;
-  padding: 1px 10px; 
+  padding: 5px; 
   box-sizing: border-box;
   animation: glowing 4s infinite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes glowing {
