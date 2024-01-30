@@ -39,8 +39,19 @@ const resolvers = {
     },
 
     updateQuestion: async (parent, { id, text }) => {
-      return await Question.findByIdAndUpdate(id, { text }, { new: true }); // { new: true } option returns the updated document
+      try {
+        const updatedQuestion = await Question.findByIdAndUpdate(id, { text }, { new: true });
+  
+        if (!updatedQuestion) {
+          throw new Error('Question not found');
+        }
+  
+        return updatedQuestion;
+      } catch (error) {
+        throw new Error(`Error updating question: ${error.message}`);
+      }
     },
+
     deleteQuestion: async (parent, { id }) => {
       const deletedQuestion = await Question.findByIdAndDelete(id);
       if (deletedQuestion) {
