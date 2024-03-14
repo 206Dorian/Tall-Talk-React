@@ -9,6 +9,9 @@
   --offMint: #68bfca;
   --palePink: #e3d7e1;
     --timberwolf: #6f757c;
+    --chartruesse: #e9ff70;
+    --slate-blue: #a8d5e2;
+    --blue: #1a659e;
 }
 
 .card-container {
@@ -20,9 +23,9 @@
 
 .card {
   background-color: var(--payneGrey);
-  border: 4px solid var(--offMint);
+  border: 4px solid var(--aqua);
   border-radius: 30px;
-  color: var(--palePink);
+  color: var(--aqua);
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 30px; 
   width: 800px; 

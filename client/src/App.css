@@ -9,6 +9,9 @@
   --offMint: #68bfca;
   --palePink: #e3d7e1;
   --timberwolf: #6f757c;
+  --chartruesse: #e9ff70;
+  --slate-blue: #a8d5e2;
+  --blue: #26547c;
 }
 
 
@@ -16,7 +19,7 @@ body {
   min-height: 100vh;
   display: grid;
   place-content: center;
-  background: var(--dusk);
+  background: var(--blue);
 }
 
 @media (max-width: 768px) {

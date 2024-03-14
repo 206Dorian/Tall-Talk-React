@@ -1,7 +1,7 @@
 /* Header.css */
 
 .header {
-    background-color: var(--dusk);
+    background-color: var(--slate-blue);
     color: white;
     text-align: center;
     padding: 20px;
@@ -13,7 +13,7 @@
     font-size: 75px;
     position: relative;
     text-align: center;
-    color: var(--aqua);
+    color: var(--dusk);
     margin-top: 15px;
     margin-bottom: 0px;
     font-family: 'Alegreya Sans SC', sans-serif;
@@ -24,7 +24,7 @@
     font-size: 40px;
     position: relative;
     text-align: center;
-    color: var(--aqua);
+    color: var(--dusk);
     margin-top: 0px;
     margin-bottom: 15px;
     text-shadow: 10px 10px 20px rgba(1, 1, 1, 3);
