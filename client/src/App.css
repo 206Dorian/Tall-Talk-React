@@ -1,17 +1,11 @@
 :root {
   --dorianGrey: #2F3C42;
   --dusk: #034754;
-  --outerspace: #44565F;
   --payneGrey: #576065;
   --aqua: rgb(30, 238, 238);
-  --mint: #16d9e7;
-  --offWhite: #E5EEF1;
-  --offMint: #68bfca;
-  --palePink: #e3d7e1;
-  --timberwolf: #6f757c;
   --chartruesse: #e9ff70;
   --slate-blue: #a8d5e2;
-  --blue: #26547c;
+  --blue: #062c44;
 }
 
 
@@ -23,11 +17,14 @@ body {
 }
 
 @media (max-width: 768px) {
+
   /* Define styles for mobile devices here */
   .card {
     /* Adjust card size for mobile */
-    width: 90%; /* You can adjust the width as needed */
-    font-size: 20px; /* Adjust font size for mobile */
+    width: 90%;
+    /* You can adjust the width as needed */
+    font-size: 20px;
+    /* Adjust font size for mobile */
     /* Add any other mobile-specific styles here */
   }
 }

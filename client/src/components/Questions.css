@@ -1,37 +1,33 @@
 :root {
   --dorianGrey: #2F3C42;
   --dusk: #034754;
-  --outerspace: #44565F;
   --payneGrey: #576065;
   --aqua: rgb(30, 238, 238);
-  --mint: #16d9e7;
-  --offWhite: #E5EEF1;
-  --offMint: #68bfca;
-  --palePink: #e3d7e1;
-    --timberwolf: #6f757c;
     --chartruesse: #e9ff70;
-    --slate-blue: #a8d5e2;
-    --blue: #1a659e;
+  --slate-blue: #a8d5e2;
+  --blue: #062c44;
 }
 
 .card-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Center vertically within the viewport height */
+  min-height: 100vh;
+  /* Center vertically within the viewport height */
 }
 
 .card {
   background-color: var(--payneGrey);
-  border: 4px solid var(--aqua);
+  border: 4px solid var(--slate-blue);
   border-radius: 30px;
-  color: var(--aqua);
+  color: var(--chartruesse);
   font-family: 'Alegreya Sans SC', sans-serif;
-  font-size: 30px; 
-  width: 800px; 
-  height: 250px; /* Set a fixed height for the card */
+  font-size: 30px;
+  width: 800px;
+  height: 250px;
+  /* Set a fixed height for the card */
   text-align: center;
-  padding: 5px; 
+  padding: 5px;
   box-sizing: border-box;
   animation: glowing 4s infinite;
   display: flex;
@@ -45,20 +41,25 @@
   0% {
     box-shadow: 0 0 5px aqua;
   }
+
   60% {
     box-shadow: 0 0 20px aqua, 0 0 40px #fff, 0 0 70px #fff;
   }
+
   100% {
     box-shadow: 0 0 5px #fff;
   }
 }
 
 @media (max-width: 768px) {
+
   /* Define styles for mobile devices here */
   .card {
     /* Adjust card size for mobile */
-    width: 80%; /* You can adjust the width as needed */
-    font-size: 30px; /* Adjust font size for mobile */
+    width: 80%;
+    /* You can adjust the width as needed */
+    font-size: 30px;
+    /* Adjust font size for mobile */
     margin: 0 auto;
   }
 }
