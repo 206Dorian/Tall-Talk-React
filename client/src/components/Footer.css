@@ -1,5 +1,15 @@
+:root {
+  --dorianGrey: #2F3C42;
+  --dusk: #034754;
+  --payneGrey: #576065;
+  --aqua: rgb(30, 238, 238);
+  --chartruesse: #e9ff70;
+  --slate-blue: #a8d5e2;
+  --blue: #1f2e3c;
+}
+
 .footer {
-    background-color: var(--dorianGrey);
+    background-color: var(--payneGrey);
     position: relative;
     width: 90%;
     height: 100%;
@@ -9,8 +19,7 @@
     border-radius: .5rem;
     clear: both;
     /* Add this property to clear the float */
-    border: 4px solid var(--slate-blue
-    );
+    border: 4px solid var(--slate-blue);
     border-radius: 30px;
     /* Add border property */
     font-size: 30px;
@@ -18,7 +27,11 @@
     margin-top: 10px;
     margin-bottom: 0px;
     font-family: 'Alegreya Sans SC', sans-serif;
-  
+    }
+
+  button:hover {
+    background-color: var(--slate-blue);
+    color: var(--chartruesse);
   }
 
   
