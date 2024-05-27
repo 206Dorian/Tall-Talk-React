@@ -42,9 +42,9 @@
       color: var(--aqua); /* Change color after link is visited */
     }
     
-    /* button:hover {
+    button:hover {
       background-color: var(--slate-blue);
       color: var(--chartruesse);
-    } */
+    }
 
   
