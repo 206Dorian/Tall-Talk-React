@@ -29,9 +29,22 @@
     font-family: 'Alegreya Sans SC', sans-serif;
     }
 
-  button:hover {
-    background-color: var(--slate-blue);
-    color: var(--chartruesse);
-  }
+    .footer a {
+      color: var(--slate-blue);
+      text-decoration: none; /* Optional: removes underline from links */
+    }
+    
+    .footer a:hover {
+      color: var(--chartruesse); /* Change color on hover */
+    }
+    
+    .footer a:visited {
+      color: var(--aqua); /* Change color after link is visited */
+    }
+    
+    /* button:hover {
+      background-color: var(--slate-blue);
+      color: var(--chartruesse);
+    } */
 
   
