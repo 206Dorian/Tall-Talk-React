@@ -29,7 +29,7 @@ if (process.env.NODE_ENV === 'production') {
 
 const connectToMongoDB = async () => {
   try {
-    const uri = process.env.YOUR_CONNECTION_STRING;
+    const uri = process.env.MONGODB_URI;
     await mongoose.connect(uri, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
