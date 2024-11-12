@@ -8,9 +8,10 @@ function Header() {
     <header className="header">
       {/* <h1>Tall Talk</h1> */}
       <br></br>
-      <h1>QUERIES & QUANDRIES</h1>
+      <h1>QUEERIES & QUANDRIES</h1>
       <br></br>
-      <h2>Think of this as the opposite of small talk...</h2>
+      <h2> A place to help you get to know people better,<br></br>
+        Think of it as the opposite of small talk...</h2>
     </header>
   );
 }
